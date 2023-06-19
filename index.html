@@ -40,14 +40,15 @@
                     href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
         </fieldset>
         <fieldset>
-            <label>Upload a profile picture:
-                <input type="file" />
+            <label for="profile-picture">Upload a profile picture:
+                <input id="profile-picture" type="file" />
             </label>
             <!-- added minimum and maximum age for the input -->
-            <label>Input your age (years): <input type="number" min="13" max="120" /></label>
-            <label>How did you hear about us?
+            <!-- link elements and their labels using FOR and ID -->
+            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120" /></label>
+            <label for="referrer">How did you hear about us?
                  <!-- add dropdown using select elements -->
-                <select>
+                <select id="referrer">
                     <!-- add value to send to server -->
                     <option value="">(select one)</option>
                     <option value="1">freeCodeCamp News</option>
@@ -56,7 +57,7 @@
                     <option value="4">Other</option>
                 </select>
             </label>
-            <label>Provide a bio: <textarea></textarea></label>
+            <label for="bio">Provide a bio: <textarea id="bio"></textarea></label>
         </fieldset>
         <!-- add a submit input, which can be renamed using value-->
         <input type="submit" value="Submit">
