@@ -18,14 +18,15 @@
         <fieldset>
             <!-- link input to label using for and id -->
             <!-- "required" makes it mandatory to enter a value in the fields -->
-            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required /></label>
-            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required /></label>
-            <label for="email" type="email">Enter Your Email: <input id="email" type="email" required /></label>
+            <!-- added "name" to identify the element in the form submission -->
+            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name" required /></label>
+            <label for="email" type="email">Enter Your Email: <input id="email" type="email" name="email" required /></label>
             <!-- minlength adds a minimum length requirement -->
             <!-- <label for="new-password">Create a New Password: <input id="new-password" type="password" required minlength="8" pattern="[a-z0-5]{8,}"/></label> -->
             <!-- pattern adds a pattern requirement -->
             <label for="new-password">Create a New Password: <input id="new-password" type="password" required
-                    pattern="[a-z0-5]{8,}" /></label>
+                    pattern="[a-z0-5]{8,}" name="new-password" /></label>
         </fieldset>
         <fieldset>
             <!-- added "name" to relate radio buttons to one another and allow one selectable at a time-->
@@ -36,19 +37,19 @@
                 <input id="business-account" type="radio" name="account-type"> Business Account</label>
             <label for="terms-and-conditions">
                 <!-- add link to terms and conditions -->
-                <input id="terms-and-conditions" type="checkbox" required> I accept the <a
+                <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" required /> I accept the <a
                     href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
         </fieldset>
         <fieldset>
             <label for="profile-picture">Upload a profile picture:
-                <input id="profile-picture" type="file" />
+                <input id="profile-picture" type="file" name="profile-picture" />
             </label>
             <!-- added minimum and maximum age for the input -->
             <!-- link elements and their labels using FOR and ID -->
-            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120" /></label>
+            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120" name="age" /></label>
             <label for="referrer">How did you hear about us?
                  <!-- add dropdown using select elements -->
-                <select id="referrer">
+                <select id="referrer" name="referrer">
                     <!-- add value to send to server -->
                     <option value="">(select one)</option>
                     <option value="1">freeCodeCamp News</option>
@@ -57,7 +58,7 @@
                     <option value="4">Other</option>
                 </select>
             </label>
-            <label for="bio">Provide a bio: <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+            <label for="bio">Provide a bio: <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio" ></textarea></label>
         </fieldset>
         <!-- add a submit input, which can be renamed using value-->
         <input type="submit" value="Submit">
