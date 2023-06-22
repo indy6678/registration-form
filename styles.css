@@ -5,9 +5,48 @@ body {
     margin: 0;
     background-color: #1b1b32;
     color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
 }
 
 label {
     display: block;
     margin: 0.5rem 0;
+}
+
+h1, p {
+    /* center the elements */
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+}
+
+fieldset {
+    /* remove border from fieldset */
+    border: none;
+    padding: 2rem 0 2rem 0;
+    /* add border to bottom only */
+    border-bottom: 3px solid #3b3b4f
+}
+
+/* select last fieldset using pseudo-class*/
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+/* set the elements on their own lines */
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+/* remove width rule for .inline class elements, setting them inline with labels */
+.inline {
+    width: unset;
 }
