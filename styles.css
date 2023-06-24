@@ -25,6 +25,7 @@ form {
     max-width: 500px;
     min-width: 300px;
     width: 60vw;
+    padding: 0 0 2em 0;
 }
 
 fieldset {
@@ -38,6 +39,10 @@ fieldset {
 /* select last fieldset using pseudo-class*/
 fieldset:last-of-type {
     border-bottom: none;
+}
+
+a{
+    color: #dfdfe2;
 }
 
 /* set the elements on their own lines */
