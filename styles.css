@@ -65,4 +65,15 @@ input, textarea {
 input[type="submit"] {
     display: block;
     width: 60%;
+    /* center submit button setting left and right to auto */
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+}
+
+/* add padding to file input */
+input[type="file"]{
+    padding: 1px 2px;
 }
